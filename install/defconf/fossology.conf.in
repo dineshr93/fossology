@@ -93,16 +93,16 @@ client  = /usr/bin/mailx
 
 [EXT_AUTH]
 ; Use external Authentication
-CONF_EXT_AUTH_ENABLE=false
+CONF_EXT_AUTH_ENABLE=true
 
 ; Environment variable where to find the User name
-CONF_EXT_AUTH_ENV_USER=
+CONF_EXT_AUTH_ENV_USER=uid
 
 ; Environment variable where to find the User email
-CONF_EXT_AUTH_ENV_MAIL=
+CONF_EXT_AUTH_ENV_MAIL=mail
 
 ; Environment variable where to find the User Description
-CONF_EXT_AUTH_ENV_DESC=
+CONF_EXT_AUTH_ENV_DESC=description
 
 ; Set to true to force usernames to lowercase
 CONF_EXT_AUTH_LOWERCASE_USER=true
@@ -114,5 +114,5 @@ CONF_EXT_AUTH_NEW_USER_AUTO_CREATE=true
 ; List of agents attributed to newly created users
 ; Example:
 ; "agent_copyright,agent_keyword,agent_mimetype,agent_monk,agent_nomos,agent_ojo,agent_shagent"
-CONF_EXT_AUTH_NEW_USER_AGENT_LIST=
+CONF_EXT_AUTH_NEW_USER_AGENT_LIST="agent_copyright,agent_keyword,agent_mimetype,agent_monk,agent_nomos,agent_ojo,agent_shagent"
 
