@@ -262,6 +262,10 @@ class core_auth extends FO_Plugin
   {
     $user_exists=true;
     /* Check the user for external authentication */
+    file_put_contents('php://stderr', "Variable={$useAuthExternal} \n");
+    file_put_contents('php://stderr', "================================================ \n");
+    file_put_contents('php://stderr', "Array: " . print_r($GLOBALS['SysConf'], true) . " \n");
+    
     if ($this->authExternal !== false && $this->authExternal['useAuthExternal']) {
       $username = $this->authExternal['loginAuthExternal'];
       /* checking if user exists */
@@ -286,7 +290,7 @@ class core_auth extends FO_Plugin
         add_user($User, $Desc, $Seed, $Hash, $Perm, $Email, $Email_notify, $agentList, $Folder);
       }
     }
-
+     
     if (empty($userName) || $userName == 'Default User') {
       return false;
     }
