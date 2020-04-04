@@ -96,13 +96,13 @@ client  = /usr/bin/mailx
 CONF_EXT_AUTH_ENABLE=true
 
 ; Environment variable where to find the User name
-CONF_EXT_AUTH_ENV_USER=uid
+CONF_EXT_AUTH_ENV_USER=AUTHENTICATE_UID
 
 ; Environment variable where to find the User email
-CONF_EXT_AUTH_ENV_MAIL=mail
+CONF_EXT_AUTH_ENV_MAIL=AUTHENTICATE_MAIL
 
 ; Environment variable where to find the User Description
-CONF_EXT_AUTH_ENV_DESC=description
+CONF_EXT_AUTH_ENV_DESC=AUTHENTICATE_DESCRIPTION
 
 ; Set to true to force usernames to lowercase
 CONF_EXT_AUTH_LOWERCASE_USER=true
